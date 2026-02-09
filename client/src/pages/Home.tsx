@@ -65,8 +65,6 @@ export default function Home() {
           >
             <source src={techVideo} type="video/mp4" />
           </video>
-          {/* Tint Overlay */}
-          <div className="absolute inset-0 bg-black/40 z-10" />
         </div>
 
         <div className="container relative z-20 px-4 md:px-6 text-center">
@@ -125,8 +123,6 @@ export default function Home() {
           >
             <source src={techVideo} type="video/mp4" />
           </video>
-          {/* Tint Overlay */}
-          <div className="absolute inset-0 bg-black/40 z-10" />
         </div>
         <div className="container px-4 md:px-6 mx-auto relative z-10">
           <div className="flex flex-col items-center text-center mb-12 md:mb-16">
@@ -235,8 +231,6 @@ export default function Home() {
           >
             <source src={techVideo} type="video/mp4" />
           </video>
-          {/* Tint Overlay */}
-          <div className="absolute inset-0 bg-background/70 z-10" />
         </div>
         <div className="container px-4 md:px-6 mx-auto relative z-10">
           <div className="text-center max-w-5xl mx-auto mb-12 md:mb-16">
@@ -291,8 +285,6 @@ export default function Home() {
           >
             <source src={techVideo} type="video/mp4" />
           </video>
-          {/* Tint Overlay */}
-          <div className="absolute inset-0 bg-background/80 z-10" />
         </div>
         <div className="container px-4 md:px-6 mx-auto relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
