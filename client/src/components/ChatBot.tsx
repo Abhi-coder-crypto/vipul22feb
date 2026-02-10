@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { MessageSquare, X, Send, Bot } from "lucide-react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import chatbotLottie from "@assets/chatbot_1768729907589.lottie";
-import assistantAvatar from "@assets/unnamed_1769403196969.jpg";
+import assistantAvatar from "@assets/Gemini_Generated_Image_r4lwcfr4lwcfr4lw_1770703394697.png";
 import { services } from "@/lib/services-data";
 
 export function ChatBot() {
