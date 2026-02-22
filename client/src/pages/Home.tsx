@@ -22,6 +22,19 @@ import indRetail from "@assets/generated_images/retail_technology_and_smart_stor
 import indLogistics from "@assets/generated_images/logistics_and_warehouse_automation_technology.png";
 import indHospitality from "@assets/generated_images/hospitality_and_smart_hotel_technology.png";
 import indIndustriesServed from "@assets/image_1771752208956.png";
+
+// New Industry Images
+import imgCorporate from "@/assets/images/industry-corporate.jpg";
+import imgManufacturing from "@/assets/images/industry-manufacturing.jpg";
+import imgHealthcare from "@/assets/images/industry-healthcare.jpg";
+import imgEducation from "@/assets/images/industry-education.jpg";
+import imgRetail from "@/assets/images/industry-retail.jpg";
+import imgHospitalityNew from "@/assets/images/industry-hospitality.jpg";
+import imgGovernment from "@/assets/images/industry-government.jpg";
+import imgLogistics from "@/assets/images/industry-logistics.jpg";
+import imgStartups from "@/assets/images/industry-startups.jpg";
+import imgDatacenter from "@/assets/images/industry-datacenter.jpg";
+
 import projectNetwork from "@assets/generated_images/modern_office_network_infrastructure_installation_photo.png";
 import projectAV from "@assets/generated_images/commercial_building_smart_lighting_and_av_installation_photo.png";
 import projectSecurity from "@assets/generated_images/industrial_facility_security_and_cctv_installation_photo.png";
@@ -272,16 +285,16 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
             {[
-              { title: "Corporate Offices & Enterprises", icon: Shield },
-              { title: "Manufacturing & Industrial Units", icon: Network },
-              { title: "Healthcare & Hospitals", icon: Zap },
-              { title: "Education & Training Institutions", icon: Lock },
-              { title: "Retail & Commercial Spaces", icon: Zap },
-              { title: "Hotels, Hospitality & Real Estate", icon: Shield },
-              { title: "Government & Public Sector", icon: Lock },
-              { title: "Warehousing, Logistics & Supply Chain", icon: Network },
-              { title: "Startups & SMEs", icon: Zap },
-              { title: "Data Centers & IT Parks", icon: Lock },
+              { title: "Corporate Offices & Enterprises", icon: Shield, img: imgCorporate },
+              { title: "Manufacturing & Industrial Units", icon: Network, img: imgManufacturing },
+              { title: "Healthcare & Hospitals", icon: Zap, img: imgHealthcare },
+              { title: "Education & Training Institutions", icon: Lock, img: imgEducation },
+              { title: "Retail & Commercial Spaces", icon: Zap, img: imgRetail },
+              { title: "Hotels, Hospitality & Real Estate", icon: Shield, img: imgHospitalityNew },
+              { title: "Government & Public Sector", icon: Lock, img: imgGovernment },
+              { title: "Warehousing, Logistics & Supply Chain", icon: Network, img: imgLogistics },
+              { title: "Startups & SMEs", icon: Zap, img: imgStartups },
+              { title: "Data Centers & IT Parks", icon: Lock, img: imgDatacenter },
             ].map((industry, idx) => (
               <motion.div
                 key={idx}
@@ -289,12 +302,22 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.05 }}
-                className="bg-[#0d1526] p-6 rounded-2xl border border-white/5 hover:border-[#3b82f6]/30 transition-all group"
+                className="bg-[#0d1526] rounded-2xl border border-white/5 hover:border-[#3b82f6]/30 transition-all group overflow-hidden flex flex-col h-full shadow-lg"
               >
-                <div className="w-10 h-10 rounded-lg bg-[#3b82f6]/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <industry.icon className="w-5 h-5 text-[#3b82f6]" />
+                <div className="aspect-video overflow-hidden relative">
+                  <img 
+                    src={industry.img} 
+                    alt={industry.title} 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0d1526] to-transparent opacity-60" />
                 </div>
-                <h3 className="font-bold text-sm text-white font-poppins leading-tight">{industry.title}</h3>
+                <div className="p-5 flex flex-col flex-1">
+                  <div className="w-10 h-10 rounded-lg bg-[#3b82f6]/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <industry.icon className="w-5 h-5 text-[#3b82f6]" />
+                  </div>
+                  <h3 className="font-bold text-sm text-white font-poppins leading-tight flex-1">{industry.title}</h3>
+                </div>
               </motion.div>
             ))}
           </div>
