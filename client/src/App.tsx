@@ -14,6 +14,8 @@ import About from "@/pages/About";
 import Services from "@/pages/Services";
 import ServiceDetail from "@/pages/ServiceDetail";
 import Contact from "@/pages/Contact";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import TermsOfService from "@/pages/TermsOfService";
 
 import { ScrollToTopButton } from "@/components/ScrollToTop";
 
@@ -83,6 +85,8 @@ function Router() {
           <Route path="/services" component={Services} />
           <Route path="/services/:id" component={ServiceDetail} />
           <Route path="/contact" component={Contact} />
+          <Route path="/privacy" component={PrivacyPolicy} />
+          <Route path="/terms" component={TermsOfService} />
           <Route component={NotFound} />
         </Switch>
       </div>
