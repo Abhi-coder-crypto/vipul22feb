@@ -47,8 +47,6 @@ export default function PrivacyPolicy() {
                     We take reasonable measures to protect your personal information from loss, theft, misuse, and unauthorized access.
                   </p>
                 </section>
-                
-                <p className="text-sm pt-4 italic">Last updated: February 22, 2026</p>
               </CardContent>
             </Card>
           </motion.div>

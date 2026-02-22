@@ -47,8 +47,6 @@ export default function TermsOfService() {
                     VIP Networks will not be liable for any damages of any kind arising from the use of our website, including, but not limited to direct, indirect, incidental, punitive, and consequential damages.
                   </p>
                 </section>
-
-                <p className="text-sm pt-4 italic">Last updated: February 22, 2026</p>
               </CardContent>
             </Card>
           </motion.div>
