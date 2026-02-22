@@ -138,8 +138,12 @@ export function Footer() {
         <div className="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center gap-4 text-[15px] text-white/40">
           <p>© {new Date().getFullYear()} VIP Networks. All rights reserved.</p>
           <div className="flex gap-8">
-            <a href="#" className="hover:text-white transition-colors" data-testid="link-privacy">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors" data-testid="link-terms">Terms of Service</a>
+            <Link href="/privacy">
+              <span className="hover:text-white transition-colors cursor-pointer" data-testid="link-privacy">Privacy Policy</span>
+            </Link>
+            <Link href="/terms">
+              <span className="hover:text-white transition-colors cursor-pointer" data-testid="link-terms">Terms of Service</span>
+            </Link>
           </div>
         </div>
       </div>
