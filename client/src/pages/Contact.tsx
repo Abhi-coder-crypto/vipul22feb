@@ -9,6 +9,7 @@ import { MapPin, Phone, Mail, Clock, Send, Loader2, Instagram, Facebook, Linkedi
 import { z } from "zod";
 import worldMapVideo from "@assets/Untitled_design_1769405654510.mp4";
 import radarGif from "@assets/CCTV_Camera_1768636156008.gif";
+import workApproachVideo from "@assets/From_KlickPin_CF_Pin_on_Application_design_1769408986210.mp4";
 
 // Frontend validation schema
 const contactSchema = z.object({
@@ -73,7 +74,7 @@ export default function Contact() {
             muted 
             playsInline
             className="w-full h-full object-cover"
-            src={worldMapVideo}
+            src={workApproachVideo}
           />
         </div>
         

@@ -251,18 +251,18 @@ export default function Home() {
           </div>
 
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
             {[
-              { title: "Corporate Offices & Enterprises", icon: Shield, img: imgCorporate },
-              { title: "Manufacturing & Industrial Units", icon: Network, img: imgManufacturing },
-              { title: "Healthcare & Hospitals", icon: Zap, img: imgHealthcare },
-              { title: "Education & Training Institutions", icon: Lock, img: imgEducation },
-              { title: "Retail & Commercial Spaces", icon: Zap, img: imgRetail },
-              { title: "Hotels, Hospitality & Real Estate", icon: Shield, img: imgHospitalityNew },
-              { title: "Government & Public Sector", icon: Lock, img: imgGovernment },
-              { title: "Warehousing, Logistics & Supply Chain", icon: Network, img: imgLogistics },
-              { title: "Startups & SMEs", icon: Zap, img: imgStartups },
-              { title: "Data Centers & IT Parks", icon: Lock, img: imgDatacenter },
+              { title: "Corporate Offices & Enterprises", img: imgCorporate },
+              { title: "Manufacturing & Industrial Units", img: imgManufacturing },
+              { title: "Healthcare & Hospitals", img: imgHealthcare },
+              { title: "Education & Training Institutions", img: imgEducation },
+              { title: "Retail & Commercial Spaces", img: imgRetail },
+              { title: "Hotels, Hospitality & Real Estate", img: imgHospitalityNew },
+              { title: "Government & Public Sector", img: imgGovernment },
+              { title: "Warehousing, Logistics & Supply Chain", img: imgLogistics },
+              { title: "Startups & SMEs", img: imgStartups },
+              { title: "Data Centers & IT Parks", img: imgDatacenter },
             ].map((industry, idx) => (
               <motion.div
                 key={idx}
@@ -281,9 +281,6 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0d1526] to-transparent opacity-60" />
                 </div>
                 <div className="p-5 flex flex-col flex-1">
-                  <div className="w-10 h-10 rounded-lg bg-[#3b82f6]/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <industry.icon className="w-5 h-5 text-[#3b82f6]" />
-                  </div>
                   <h3 className="font-bold text-sm text-white font-poppins leading-tight flex-1">{industry.title}</h3>
                 </div>
               </motion.div>

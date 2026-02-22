@@ -5,6 +5,7 @@ import { Users, ShieldCheck, Cpu, Headphones, Trophy } from "lucide-react";
 import { services } from "@/lib/services-data";
 import { ServiceCard } from "@/components/ServiceCard";
 import worldMapVideo from "@assets/Untitled_design_1769405654510.mp4";
+import networkingVideo from "@assets/From_KlickPin_CF_Pin_su_zenziads_1769407670142.mp4";
 
 // Why Choose Images
 import experiencedTechImg from "@assets/pexels-cottonbro-6804071_1768889922723.jpg";
@@ -70,7 +71,7 @@ export default function Services() {
             muted 
             playsInline
             className="w-full h-full object-cover"
-            src={worldMapVideo}
+            src={networkingVideo}
           />
         </div>
         <div className="container px-4 md:px-6 mx-auto relative z-10 text-center">
