@@ -21,6 +21,7 @@ import indEducation from "@assets/generated_images/educational_technology_and_mo
 import indRetail from "@assets/generated_images/retail_technology_and_smart_store_interior.png";
 import indLogistics from "@assets/generated_images/logistics_and_warehouse_automation_technology.png";
 import indHospitality from "@assets/generated_images/hospitality_and_smart_hotel_technology.png";
+import indIndustriesServed from "@assets/image_1771752208956.png";
 import projectNetwork from "@assets/generated_images/modern_office_network_infrastructure_installation_photo.png";
 import projectAV from "@assets/generated_images/commercial_building_smart_lighting_and_av_installation_photo.png";
 import projectSecurity from "@assets/generated_images/industrial_facility_security_and_cctv_installation_photo.png";
@@ -236,32 +237,64 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="relative rounded-3xl overflow-hidden border border-white/10 aspect-video group"
+            >
+              <img 
+                src={indIndustriesServed} 
+                alt="Industries Overview" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-8">
+                <p className="text-white font-medium text-lg">Comprehensive technology integration for diverse enterprise environments.</p>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="relative rounded-3xl overflow-hidden border border-white/10 aspect-video group"
+            >
+              <img 
+                src={indCorporate} 
+                alt="Corporate Excellence" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-8">
+                <p className="text-white font-medium text-lg">Scalable infrastructure designed for the next generation of business growth.</p>
+              </div>
+            </motion.div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
             {[
-              { title: "Smart Cities", img: indSmartCity, desc: "Urban infrastructure with integrated IoT and security." },
-              { title: "Manufacturing", img: indManufacturing, desc: "Industrial automation and robust network connectivity." },
-              { title: "Healthcare", img: indMedical, desc: "Secure digital health systems and reliable power backup." },
-              { title: "Corporate", img: indCorporate, desc: "Premium IT infrastructure for modern enterprise workspaces." },
-              { title: "Education", img: indEducation, desc: "Smart classroom technology and digital learning infrastructure." },
-              { title: "Retail", img: indRetail, desc: "Modern digital kiosks and smart lighting for retail environments." },
-              { title: "Logistics", img: indLogistics, desc: "Automated warehouse systems and industrial tech integration." },
-              { title: "Hospitality", img: indHospitality, desc: "Luxury smart hospitality tech and check-in automation." },
+              { title: "Corporate Offices & Enterprises", icon: Shield },
+              { title: "Manufacturing & Industrial Units", icon: Network },
+              { title: "Healthcare & Hospitals", icon: Zap },
+              { title: "Education & Training Institutions", icon: Lock },
+              { title: "Retail & Commercial Spaces", icon: Zap },
+              { title: "Hotels, Hospitality & Real Estate", icon: Shield },
+              { title: "Government & Public Sector", icon: Lock },
+              { title: "Warehousing, Logistics & Supply Chain", icon: Network },
+              { title: "Startups & SMEs", icon: Zap },
+              { title: "Data Centers & IT Parks", icon: Lock },
             ].map((industry, idx) => (
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="bg-card rounded-2xl border border-white/5 shadow-xl overflow-hidden group flex flex-col h-full"
+                transition={{ delay: idx * 0.05 }}
+                className="bg-[#0d1526] p-6 rounded-2xl border border-white/5 hover:border-[#3b82f6]/30 transition-all group"
               >
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img src={industry.img} alt={industry.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div className="w-10 h-10 rounded-lg bg-[#3b82f6]/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <industry.icon className="w-5 h-5 text-[#3b82f6]" />
                 </div>
-                <div className="p-6 flex-1 flex flex-col">
-                  <h3 className="font-bold text-lg text-white font-poppins mb-2">{industry.title}</h3>
-                  <p className="text-sm text-muted-foreground">{industry.desc}</p>
-                </div>
+                <h3 className="font-bold text-sm text-white font-poppins leading-tight">{industry.title}</h3>
               </motion.div>
             ))}
           </div>
