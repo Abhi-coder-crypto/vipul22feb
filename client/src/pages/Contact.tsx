@@ -10,6 +10,8 @@ import { z } from "zod";
 import worldMapVideo from "@assets/Untitled_design_1769405654510.mp4";
 import radarGif from "@assets/CCTV_Camera_1768636156008.gif";
 import workApproachVideo from "@assets/From_KlickPin_CF_Pin_on_Application_design_1769408986210.mp4";
+import contactHeroVideo from "@/assets/videos/contact-hero.mp4";
+import contactDetailsVideo from "@/assets/videos/contact-details.mp4";
 
 // Frontend validation schema
 const contactSchema = z.object({
@@ -74,7 +76,7 @@ export default function Contact() {
             muted 
             playsInline
             className="w-full h-full object-cover"
-            src={workApproachVideo}
+            src={contactHeroVideo}
           />
         </div>
         
@@ -97,8 +99,18 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="py-16 md:py-24 container px-4 md:px-6 mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-32">
+      <div className="py-16 md:py-24 container px-4 md:px-6 mx-auto relative overflow-hidden">
+        <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="w-full h-full object-cover"
+            src={contactDetailsVideo}
+          />
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-32 relative z-10">
           {/* Contact Info */}
           <div className="space-y-10 md:space-y-12">
             <div className="space-y-6 md:space-y-8">

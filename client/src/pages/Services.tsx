@@ -6,6 +6,8 @@ import { services } from "@/lib/services-data";
 import { ServiceCard } from "@/components/ServiceCard";
 import worldMapVideo from "@assets/Untitled_design_1769405654510.mp4";
 import networkingVideo from "@assets/From_KlickPin_CF_Pin_su_zenziads_1769407670142.mp4";
+import servicesHeroVideo from "@/assets/videos/services-hero.mp4";
+import servicesDetailsVideo from "@/assets/videos/services-details.mp4";
 
 // Why Choose Images
 import experiencedTechImg from "@assets/pexels-cottonbro-6804071_1768889922723.jpg";
@@ -71,7 +73,7 @@ export default function Services() {
             muted 
             playsInline
             className="w-full h-full object-cover"
-            src={networkingVideo}
+            src={servicesHeroVideo}
           />
         </div>
         <div className="container px-4 md:px-6 mx-auto relative z-10 text-center">
@@ -83,8 +85,18 @@ export default function Services() {
       </div>
 
       {/* Services List */}
-      <div className="py-16 md:py-20 container px-4 md:px-6 mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      <div className="py-16 md:py-20 container px-4 md:px-6 mx-auto relative overflow-hidden">
+        <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="w-full h-full object-cover"
+            src={servicesDetailsVideo}
+          />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 relative z-10">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} index={index} delay={index * 0.1} />
           ))}
