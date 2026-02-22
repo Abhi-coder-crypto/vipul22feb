@@ -6,6 +6,7 @@ import { Link } from "wouter";
 import { useEffect, useState, useRef } from "react";
 import logo from "@assets/Untitled_design_1768974869981.png";
 import expertiseImg from "@assets/image_1771750107497.png";
+import sectionVideo from "@assets/From_KlickPin_CF_hologram___Black_wallpaper_iphone_dark_Graphi_1769410187226.mp4";
 import worldMapVideo from "@assets/Untitled_design_1769405654510.mp4";
 import networkingVideo from "@assets/From_KlickPin_CF_Pin_su_zenziads_1769407670142.mp4";
 import workApproachVideo from "@assets/From_KlickPin_CF_Pin_on_Application_design_1769408986210.mp4";
@@ -101,14 +102,14 @@ export default function About() {
       {/* 1. About Header */}
       <section className="relative pt-32 md:pt-52 pb-16 md:pb-32 overflow-hidden min-h-[50vh] md:min-h-[60vh] flex items-center">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-[#050a15]/50 z-10" />
+          <div className="absolute inset-0 bg-[#050a15]/60 z-10" />
           <video 
             autoPlay 
             loop 
             muted 
             playsInline
             className="w-full h-full object-cover"
-            src={worldMapVideo}
+            src={hologramVideo}
           />
         </div>
 
@@ -131,7 +132,19 @@ export default function About() {
 
       {/* 2. Company Overview */}
       <section className="py-12 md:py-16 relative overflow-hidden">
-        <div className="container px-4 md:px-6 mx-auto">
+        {/* Background Video for Section */}
+        <div className="absolute inset-0 z-0 opacity-40 pointer-events-none">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover scale-100"
+          >
+            <source src={sectionVideo} type="video/mp4" />
+          </video>
+        </div>
+        <div className="container px-4 md:px-6 mx-auto relative z-10">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               <motion.div
