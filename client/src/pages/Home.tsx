@@ -250,38 +250,6 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="relative rounded-3xl overflow-hidden border border-white/10 aspect-video group"
-            >
-              <img 
-                src={indIndustriesServed} 
-                alt="Industries Overview" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-8">
-                <p className="text-white font-medium text-lg">Comprehensive technology integration for diverse enterprise environments.</p>
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="relative rounded-3xl overflow-hidden border border-white/10 aspect-video group"
-            >
-              <img 
-                src={indCorporate} 
-                alt="Corporate Excellence" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-8">
-                <p className="text-white font-medium text-lg">Scalable infrastructure designed for the next generation of business growth.</p>
-              </div>
-            </motion.div>
-          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
             {[
