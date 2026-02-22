@@ -72,7 +72,7 @@ export default function Home() {
           <div className="flex flex-col items-center">
             <div className="relative w-32 h-32 md:w-56 md:h-56 mb-6 md:mb-8 bg-white rounded-full flex items-center justify-center p-2 shadow-2xl border-4 border-white/20">
               <img 
-                src={techBot} 
+                src={logo} 
                 alt="VIP Networks" 
                 className="w-full h-full object-contain filter drop-shadow-[0_0_20px_rgba(0,0,0,0.1)]" 
               />
