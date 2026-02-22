@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { Target, Award, CheckCircle2, Rocket, Network, ShieldAlert, Flame, Fingerprint, MessageSquare, Cloud, Lightbulb, HeartHandshake, UserCheck, Briefcase, Search, MapPin, PenTool, Settings, TestTube, Wrench, Handshake } from "lucide-react";
 import { Link } from "wouter";
 import { useEffect, useState, useRef } from "react";
+import logo from "@assets/Untitled_design_1768974869981.png";
+import expertiseImg from "@assets/image_1771750107497.png";
 import worldMapVideo from "@assets/Untitled_design_1769405654510.mp4";
 import networkingVideo from "@assets/From_KlickPin_CF_Pin_su_zenziads_1769407670142.mp4";
 import workApproachVideo from "@assets/From_KlickPin_CF_Pin_on_Application_design_1769408986210.mp4";

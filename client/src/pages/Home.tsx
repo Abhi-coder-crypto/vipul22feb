@@ -7,6 +7,7 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { CheckCircle2, Shield, Network, Zap, Lock, Headset } from "lucide-react";
 import { services } from "@/lib/services-data";
 import logo from "@assets/Untitled_design_1768974869981.png";
+import techBot from "@assets/ChatGPT_Image_Feb_22__2026__02_17_46_PM-removebg-preview_1771750118367.png";
 import techVideo from "../assets/videos/background-video.mp4";
 import generatedSecurity from "@assets/generated_images/professional_cctv_surveillance_camera_system.png";
 import generatedAccess from "@assets/generated_images/electronic_office_key_card_reader.png";
@@ -71,7 +72,7 @@ export default function Home() {
           <div className="flex flex-col items-center">
             <div className="relative w-32 h-32 md:w-56 md:h-56 mb-6 md:mb-8 bg-white rounded-full flex items-center justify-center p-2 shadow-2xl border-4 border-white/20">
               <img 
-                src={logo} 
+                src={techBot} 
                 alt="VIP Networks" 
                 className="w-full h-full object-contain filter drop-shadow-[0_0_20px_rgba(0,0,0,0.1)]" 
               />
@@ -207,14 +208,9 @@ export default function Home() {
       <section className="py-12 bg-primary relative overflow-hidden">
         <div className="container px-4 md:px-6 mx-auto relative z-10 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-[#ffffff] mb-6 font-poppins">Ready to Upgrade Your Infrastructure?</h2>
-          <p className="text-[#ffffff] text-xl md:text-2xl font-semibold max-w-4xl mx-auto mb-10">
+          <p className="text-[#ffffff] text-xl md:text-2xl font-semibold max-w-4xl mx-auto">
             Get in touch with our experts today for a customized quote tailored to your specific business needs.
           </p>
-          <Link href="/contact">
-            <button className="px-10 py-4 bg-white text-primary font-bold rounded-full shadow-xl hover:scale-105 transition-transform uppercase tracking-wide cursor-pointer font-poppins">
-              Connect with our Experts
-            </button>
-          </Link>
         </div>
       </section>
 

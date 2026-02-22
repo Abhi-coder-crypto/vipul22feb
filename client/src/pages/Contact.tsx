@@ -124,7 +124,6 @@ export default function Contact() {
                   <div>
                     <h4 className="font-bold text-lg md:text-xl text-white mb-1 md:mb-2 uppercase tracking-wide">Phone</h4>
                     <p className="text-white/60 text-sm md:text-lg mb-1">+91 9326144739</p>
-                    <p className="text-white/40 text-[10px] md:text-sm font-medium uppercase tracking-widest">(Mon-Sat, 9am - 7pm)</p>
                   </div>
                 </div>
 
@@ -230,7 +229,7 @@ export default function Contact() {
                 {errors.email && <p className="text-red-500 text-[10px] font-bold uppercase tracking-widest ml-1">{errors.email.message}</p>}
               </div>
 
-              <div className="space-y-2 md:space-y-3">
+              <div className="space-y-2 md:space-y-3 hidden">
                 <label className="text-[10px] md:text-xs font-bold text-white/40 uppercase tracking-widest ml-1">Service Required</label>
                 <div className="relative">
                   <select 
